@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/css.css" type="text/css" rel="stylesheet">
+    <link href="css/responsive.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/ja.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header1">
+            <div class="new">
+                <p>new</p>
+            </div>
+            <div class="icon">
+                <p></p>
+            </div>
+            <div class="login">
+                <a href="#" class="login1" >Login </a>
+                <a href="#" class="login1">My Account</a>
+                <a href="#" class="login1">Checkout</a>
+                <a href="#" class="login1">English</a>
+                <button id="myBtn">out</button>
+            </div>
+        </div>
+        <div class="header2">
+            <div class="logo">
+                <img src="images.jpeg" alt="">
+            </div>
+            <div class="menu">
+                    <ul" class="ul">
+                        <li><a href="#" class="home">Home</a></li>
+                        <li><a href="#">Features <i class="fa fa-caret-down"></i></a>
+                            <ul class="dropmenu">
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+            </div>
+            <div class="contact">
+                <div class="phone">
+                   <i class="fa fa-phone"> </i>
+                   <a href="#">  +0121324254353</a>
+                </div>
+                <div class="email">
+                    <i class="fa fa-envelope"> </i>
+                    <a href="#">  cuong@gmail.com </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="slide">
+        <div class="moreInf">
+            <div class="infContent">
+                <div class="categori" id="categori">
+                    <i class="fa fa-bars" class="i"></i>
+                    <a href="#"  class="memeber" style="align-self: center;">Member</a> 
+                </div>
+        <!-- responsive menu -->
+                 <!-- <div class="responsive_menu" id="responsive_menu">
+                    <a href="#">Home</a>
+                    <a href="#">Features</a>
+                    <a href="#" >About</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+                </div> -->
+        <!-- responsive menu -->
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <a href="#">Home</a>
+                        <a href="#" onclick="openNav()">Features</a>
+                        <a href="#" >About</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+                <div class="search">
+                    <form action="">
+                        <input type="search" placeholder="Search for....">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="money"><a href="#">Item - $ 5000</a></div>
+             </div>
+        </div>
+        <div class="slider">
+            <img src="img/sabo-and-monkey_d_luffy-fire-one_piece_pirate_warriors_3-2880x1620.jpg" alt="">
+        </div>
+    </div>
+    <div class="contener">
+        <div class="ads">
+            <img src="img/1035281_anime-wallpaper-one-piece-luffy-wallpapers-phone-hd-backgrounds_8513x4925_h.jpg" alt="">
+            <img src="img/ava-565eb.jpg" alt="">
+            <img src="img/1035281_anime-wallpaper-one-piece-luffy-wallpapers-phone-hd-backgrounds_8513x4925_h.jpg" alt="">
+        </div>
+        <div class="mainContent">
+            <div class="content">
+               <div class="hotdeal">
+                   <div class="title">
+                       <p>HOT DEALS</p>
+                       <a href="#">icon</a>
+                   </div>
+                   <div class="product">
+                       <img src="img/c2b7cfc84a9c1b5c6dd13e8b4c8f5d5b.jpg" alt="">
+                       <img src="img/c2b7cfc84a9c1b5c6dd13e8b4c8f5d5b.jpg" alt="">
+                       <img src="img/c2b7cfc84a9c1b5c6dd13e8b4c8f5d5b.jpg" alt="">
+                   </div>
+                   <img class="afPro" src="img/Brook_Watching_over_Laboon.png" alt="">
+               </div>
+               <div class="collections">
+                    <div class="title">
+                        <p>COLLECTIONS</p>
+                        <div class="option">
+                            <i class="material-icons"></i></i><a href="#">Lastest</a>
+                            <i class="material-icons"></i></i><a href="#">Discount</a>
+                            <i class="material-icons"></i></i><a href="#">Bestsell</a>
+                        </div>
+                        <div>
+                            <a href="#">icon</a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="img/c2b7cfc84a9c1b5c6dd13e8b4c8f5d5b.jpg" alt="">
+                        <img src="img/c2b7cfc84a9c1b5c6dd13e8b4c8f5d5b.jpg" alt="">
+                        <img src="img/c2b7cfc84a9c1b5c6dd13e8b4c8f5d5b.jpg" alt="">
+                    </div>
+                    <img class="afPro" src="img/Brook_Watching_over_Laboon.png" alt="">
+               </div>
+               <div class="digitals">
+                    <div class="title">
+                        <p>DIGITALS</p>
+                        <div class="option">
+                            <a href="#">Sports & Outdoor</a>
+                            <a href="#">Healthy</a>
+                            <a href="#">Automatic</a>
+                        </div>
+                        <div>
+                            <a href="#">icon</a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="img/c2b7cfc84a9c1b5c6dd13e8b4c8f5d5b.jpg" alt="">
+                        <img src="img/c2b7cfc84a9c1b5c6dd13e8b4c8f5d5b.jpg" alt="">
+                        <img src="img/c2b7cfc84a9c1b5c6dd13e8b4c8f5d5b.jpg" alt="">
+                    </div>
+                    <img class="afPro" src="img/Brook_Watching_over_Laboon.png" alt="">
+               </div>
+               <div class="home">
+                    <div class="title">
+                        <p>HOME & GARDENS</p>
+                        <div class="option">
+                            <a href="#">Sports & Outdoor</a>
+                            <a href="#">Healthy</a>
+                            <a href="#">Automatic</a>
+                        </div>
+                        <div>
+                            <a href="#">icon</a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="img/c2b7cfc84a9c1b5c6dd13e8b4c8f5d5b.jpg" alt="">
+                        <img src="img/c2b7cfc84a9c1b5c6dd13e8b4c8f5d5b.jpg" alt="">
+                        <img src="img/c2b7cfc84a9c1b5c6dd13e8b4c8f5d5b.jpg" alt="">
+                    </div>
+                    <img class="afPro" src="img/Brook_Watching_over_Laboon.png" alt="">
+                    <div  class="clear"></div>
+                </div>
+               <div class="testimonial">
+                    <div class="title">
+                        <p>TESTIMONIAL</p>
+                        <a href="#">icon</a>
+                    </div>
+                    <div class="Information">
+                        <div class="profile">
+                            <img src="img/2022713_Japanese_ShowThumbnail_642cf6b3-ee9d-e911-82a8-dd291e252010.jpg" alt="">
+                            <p>Monkey D.Luffy</p>
+                            <p>--Prirate King--</p>
+                        </div>
+                        <div class="caps">
+                            <p>i think</p>
+                        </div>
+                    </div>
+               </div>
+            </div>
+            <div class="sidebar">
+                <div class="topseller">
+                    <div class="title">
+                        <p>TOP SELLER</p>
+                    </div>
+                    <div class="sidebar_Content">
+                        <div class="sidebar_Content1">
+                            <div class="sidebar_Content_img"><img src="img/images.jpeg" alt=""></div>
+                            <div class="sidebar_Content_inf">
+                                <p>DONEC PEDE</p>
+                                <p style="color:orange;"> $20000</p>
+                            </div>
+                        </div>
+                        <div class="sidebar_Content1">
+                            <div class="sidebar_Content_img"><img src="img/images.jpeg" alt=""></div>
+                            <div class="sidebar_Content_inf">
+                                <p>CURAPITURA PELE</p>
+                                <p style="color:orange;"> $2355000</p>
+                            </div>
+                        </div>
+                        <div class="sidebar_Content1">
+                            <div class="sidebar_Content_img"><img src="img/images.jpeg" alt="" ></div>
+                            <div class="sidebar_Content_inf">
+                                <p>UT A NISL</p>
+                                <p style="color:orange;"> $20000</p>
+                            </div>    
+                        </div>
+                        <div class="sidebar_Content1">
+                            <div class="sidebar_Content_img"><img src="img/images.jpeg" alt="" ></div>
+                            <div class="sidebar_Content_inf">
+                                <p>PHASELLUS A EST</p>
+                                <p style="color:orange;"> $20000</p>
+                            </div>    
+                        </div>
+                        <div class="sidebar_Content1">
+                            <div class="sidebar_Content_img"><img src="img/images.jpeg" alt="" ></div>
+                            <div class="sidebar_Content_inf">
+                                <p>DONEC PEDE</p>
+                                <p style="color:orange;"> $20000</p>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                <div class="lastpost">
+                    <div class="title">
+                        <p>LAST POST</p>
+                    </div>
+                    <div class="sidebar_Content">
+                        <div class="lastpost1">
+                            <div class="lastpost1_content">
+                                <img src="img/1456679987_ASL.jpg" alt="">
+                                <h3>Phasellus Leo Dotor</h3>
+                                <p style="padding: 10px 0;">Secretary is a person whose job is helps and supports sb, usually in their job</p>
+                                <p>READ MORE</p>
+                            </div>
+                        </div>
+                        <div class="lastpost1">
+                            <div class="lastpost1_content">
+                                <img src="img/1456679987_ASL.jpg" alt="">
+                                <h3>Phasellus Leo Dotor</h3>
+                                <p style="padding: 10px 0;">Secretary is a person whose job is helps and supports sb, usually in their job</p>
+                                <p>READ MORE</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="faqs">
+                    <div class="title">
+                        <p>FAQS</p>
+                    </div>
+                    <div class="sidebar_Content">
+                        <div class="faqs1">
+                            <div class="faqs1_content">
+                                <h3>How to refunds a products ?</h3>
+                                <p style="padding: 10px 0;">If you bought a product that you dont't satifactions. You will refunds 100% your money.</p>
+                            </div>
+                        </div>
+                        <div class="faqs1">
+                            <div class="faqs1_content">                               
+                                <h3>How to have a voucher ?</h3>
+                            </div>
+                        </div>
+                        <div class="faqs1">
+                            <div class="faqs1_content">                               
+                                <h3>What to use in camera ?</h3>
+                            </div>
+                        </div>
+                        <div class="faqs1">
+                            <div class="faqs1_content">                               
+                                <h3>How to use Cannon $500.0 ?</h3>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="faqs1" style="border: none; padding-top: 30px;">
+                        <img src="img/c2b7cfc84a9c1b5c6dd13e8b4c8f5d5b.jpg" alt="" width="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Donors">
+            <img src="img/download.jfif" alt="">
+            <img src="img/images.jpeg" alt="">
+            <img src="img/download.jfif" alt="">
+            <img src="img/images.jpeg" alt="">
+        </div>
+    </div>
+    <footer>
+        <div class="bf_footer">
+            <div class="bf_footer_content">
+                <div>
+                    <i class="fa fa-globe"></i>
+                </div>
+                <div>
+                    <h3>Free shipping anywhere worldwilde</h3>
+                    <p>Only $100</p>
+                </div>
+            </div>
+            <div class="bf_footer_content">
+                <div>
+                    <i class="fa fa-address-card"></i>
+                </div>
+                <div>
+                    <h3>Free shipping anywhere worldwilde</h3>
+                    <p>Only $100</p>
+                </div>
+            </div>
+            <div class="bf_footer_content">
+                <div>
+                    <i class="fa fa-gift"></i>
+                </div>
+                <div>
+                    <h3>Free shipping anywhere worldwilde</h3>
+                    <p>Only $100</p>
+                </div>
+            </div>
+            <div class="bf_footer_content">
+                <div>
+                    <i class="fa fa-headphones"></i>
+                </div>
+                <div>
+                    <h3>Free shipping anywhere worldwilde</h3>
+                    <p>Only $100</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer_content">
+                <div class="footer_content_quartz">
+                    <img src="img/images.jpeg" alt="" class="logo">
+                    <p>Quartz is Free shipping anywhere worldwildeFree shippingldwilde</p>
+                </div>
+                <div class="footer_content_customerService">
+                    <h4 >Customer Service</h4>
+                    <div>
+                        <a href="#">Ask in forum</a>
+                        <a href="#">Help Desk</a>
+                        <a href="#">Custom Work</a>
+                        <a href="#">Delivery</a>
+                        <a href="#">Promotion</a>
+                        <a href="#">Term And Conditions</a>
+                    </div>
+                </div>
+                <div class="footer_content_account">
+                    <h4>Account</h4>
+                    <div>
+                        <a href="#">Payments</a>
+                        <a href="#">Save Cards</a>
+                        <a href="#">Shipping</a>
+                        <a href="#">Cancelation And Return</a>
+                        <a href="#">Faqs</a>
+                        <a href="#">Check Out</a>
+                        <a href="#">Oder Status</a>
+                    </div>
+                </div>
+                <div class="footer_content_contactUs">
+                    <h4>Contact Us</h4>
+                    <div>
+                        <a href="#"><i class="fa fa-home"></i>    64 Ngo Chi Lan, Hai Chau, Da Nang</a>
+                        <a href="#"><i class="fa fa-phone-square"></i>  0365997913</a>
+                        <a href="#"> <i class="fa fa-envelope"></i>  Cuongnguyend863@gmail.com</a>
+                    </div>
+                    <h4 style="padding: 20px 0;">NewsLetter</h4>
+                    <p >Subcribe to our maling list</p>
+                    <div class="search">
+                        <input type="search" placeholder="Search for">
+                    </div>                   
+                </div>
+            </div>
+            <!-- star footer responsive -->
+            <div class="responsive_footer" class="panel">
+                <button class="accordion" onclick="footerClick(this);">Quartz</button>
+                <div class="quartz">
+                        <p>Quartz is Free shipping anywhere worldwildeFree shippingldwilde</p>
+                    </div>
+                <button class="accordion" onclick="footerClick(this);">Customer Service</button>
+                <div class="customerService"  class="panel">
+                        <h4 >Customer Service</h4>
+                        <div class="responsive_footer_content">
+                            <a href="#">Ask in forum</a>
+                            <a href="#">Help Desk</a>
+                            <a href="#">Custom Work</a>
+                            <a href="#">Delivery</a>
+                            <a href="#">Promotion</a>
+                            <a href="#">Term And Conditions</a>
+                        </div>
+                    </div>
+                <button class="accordion" onclick="footerClick(this);">Account</button>
+                <div class="account" class="panel">
+                        <h4>Account</h4>
+                        <div class="responsive_footer_content">
+                            <a href="#">Payments</a>
+                            <a href="#">Save Cards</a>
+                            <a href="#">Shipping</a>
+                            <a href="#">Cancelation And Return</a>
+                            <a href="#">Faqs</a>
+                            <a href="#">Check Out</a>
+                            <a href="#">Oder Status</a>
+                        </div>
+                    </div>
+                <button class="accordion"  onclick="footerClick(this);">Contact Us</button>
+                <div class="contactUs" class="panel">
+                        <h4>Contact Us</h4>
+                        <div class="responsive_footer_content">
+                            <a href="#"><i class="fa fa-home"></i>    64 Ngo Chi Lan, Hai Chau, Da Nang</a>
+                            <a href="#"><i class="fa fa-phone-square"></i>  0365997913</a>
+                            <a href="#"> <i class="fa fa-envelope"></i>  Cuongnguyend863@gmail.com</a>
+                        </div>
+                        <h4 style="padding: 20px 0;">NewsLetter</h4>
+                        <p >Subcribe to our maling list</p>
+                        <div class="search">
+                            <input type="search" placeholder="Search for">
+                        </div>                   
+                    </div>
+            </div>
+            <!-- end footer responsive -->
+            <div class="end_footer">
+                <div>
+                    <p>Copyright © by 2008-2015 by.....</p>                    
+                </div>
+                <div class="end_footer_icon">
+                    <i class="fa fa-calculator"></i>
+                    <i class="fa fa-calendar"></i>
+                    <i class="fa fa-car"></i>
+                    <i class="fa fa-car-side"></i>
+                    <i class="fa fa-cash-register"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

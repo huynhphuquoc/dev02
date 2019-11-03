@@ -1,0 +1,144 @@
+@media only screen and (max-width: 1000px){
+    .ads{
+        display: flex;
+        flex-direction: column;
+    }
+    .ads img{
+            width: 100%;
+    }
+    .sidebar_Content1{
+        display: flex;
+        flex-flow: column;
+    }
+    .sidebar_Content_inf{ 
+        padding: 0px;
+    }
+    .moreInf .search{
+        padding-left: 30px;
+    }
+    .header2 .contact{
+        display: none;
+    }
+    .moreInf .money{
+        display: none;
+    }
+    .search{
+        flex: 60%;
+    }
+    .footer_content{
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+    }
+    .footer_content_quartz{
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 40px;
+    }
+    .footer_content_customerService,.footer_content_contactUs{
+        padding: 40px 0;
+    }
+    .footer_content_contactUs .search input{
+        width: 100%;
+    }
+ }
+ @media only screen and (max-width: 600px){
+     .header1 .new{
+         display: none;
+     }
+     .header1{
+         justify-content: center;
+     }
+     .login{
+         text-align: center;
+     }
+     .header2{
+         display: none;
+     }
+     .moreInf .search{
+         display: none;
+     }
+     .contener .ads{
+        display: flex;
+        flex-flow: column;
+    }
+    .contener .ads img{
+        width: 100% !important;
+        padding-top: 10px;
+    }
+    .product{
+        display: flex;
+        flex-flow: column;
+    }
+    .product img{
+        width: 100%;
+        padding: 10px 0;
+    }
+    .Donors{
+        display: none;
+    }
+    .bf_footer{
+        display: none;
+    }
+
+    .categori{
+        display: none !important;
+    }
+      .responsive_menu{
+        display: block;
+        width: 100%;
+    }
+    .responsive_menu a:not(:first-child) {display: none;}
+    .responsive_menu .icon{
+        float: right;
+        display: block !important;
+    }
+    .contener .mainContent{
+        display: flex;
+        flex-flow: column;
+    }
+    .content{
+        width: 100% !important;
+    }
+    .sidebar{
+        width: 100% !important;
+        padding-left: 0;
+    }
+    .sidebar_Content .sidebar_Content1{
+        display: flex;
+        flex-flow: row ;
+    }
+    .sidebar_Content .sidebar_Content1 .sidebar_Content_inf{
+        align-self: center;
+    }
+ }
+ @media only screen and (max-width: 600px){
+    .responsive_menu.responsive{
+         position: relative;
+     }
+    .responsive_menu.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .responsive_menu.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .footer_content{
+        display: none !important;
+    }
+    .responsive_footer{
+        display:block;
+    }
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+    .infContent{
+        color: wheat;
+    }
+ }
