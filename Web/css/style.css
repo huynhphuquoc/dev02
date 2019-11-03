@@ -92,7 +92,7 @@ padding:0;
 margin: 0;
 float: none; 
 }
-#fixNav ul li:hover {/
+#fixNav ul li:hover {
 background-color: rgb(223, 223, 223);
 }
 #fixNav ul li:hover ul{
@@ -273,7 +273,7 @@ height: 250px ;
 #content{
 margin: 5%;
 width:90%;
-height:  650PX;
+height:  620PX;
 margin-top :10px;
 float: left;
 }
@@ -469,6 +469,7 @@ font-size: 30px;
 #imgbanner3{
 width: 100%;
 margin: auto;
+margin-top : 10px ;
 }
 #footer{
 width: 100%;
