@@ -2,10 +2,11 @@
 *{
 	margin: 0;
 	padding: 0;
-	font-family: Verdana;
+    font-family: Verdana;
 }
 img{
     object-fit: cover;
+    box-sizing: border-box;
 }
 .clear{
     clear: both;
@@ -25,18 +26,61 @@ header{
     padding: 10px;
     border-bottom:rgb(189, 179, 179) 1px solid;
     justify-content: space-between;
+    text-align: center;
 }
+/* css div news */
+.header1 .news {
+    width: 100px;
+    height: 40px;
+    position: relative;
+    background: rgb(77, 77, 77);
+  }
+  .header1 .news p{
+      line-height: 40px;
+      padding-left: 5px;
+      color: white;
+  }
+  .header1 .news:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid white;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+  }
+  .header1 .news:before {
+    content: "";
+    position: absolute;
+    right: -20px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid rgb(77, 77, 77);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+  }
+/* css div news */
 .login a:hover{
     color: yellowgreen;
 }
+.login{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
 .login1{
-    width: 30%;
     box-sizing: border-box;
     text-align: center;
+    align-self: center;
     border-right: 1px solid gray;
+    border-left: 1px solid gray;
     text-decoration: none;
     color: rgb(109, 111, 112);
     padding: 0 10px;
+    width: 115px;
 }
 .login :nth-child(1){
     border-left: 1px solid grey;
@@ -45,13 +89,15 @@ header{
     display: flex;
     flex-flow: row;
     box-sizing: border-box;
+    padding-top: 10px;
 }
 .logo{  
     flex: 25%;
 }
 .logo img{
     width: 90px;
-    height: 70px;
+    height: 90px;
+    object-fit: contain;
 
 }
 .clearfix::after{
@@ -83,7 +129,7 @@ header{
 }
 .menu ul{
     list-style-type: none;
-    background: rgb(194, 96, 16);
+    background: gray;
 }
 .menu li{
     color: black;
@@ -100,7 +146,7 @@ header{
     color: black;
 }
 .menu a:hover{
-    background: yellow;
+    background: orangered;
     color:black;
 }
 .dropmenu{
@@ -133,10 +179,10 @@ header{
     padding-right: 10px;
 }
 .phone{
-    text-align: center;
+    text-align: right;
 }
 .email{
-    text-align: center;
+    text-align: right;
 }
 .slide{
     display: flex;
@@ -158,16 +204,41 @@ header{
     justify-content: space-around;
 }
 .moreInf .categori{
-    background: orange;
+    background: orangered;
     padding: 15px 100px;
     line-height: 50px;
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
+    position: relative;
 }
 .moreInf .categori i{
     align-self: center;
     padding: 0 10px;
 }
+.member{
+    display: flex;
+}
+#list_member{
+    display: none;
+}
+#list_member ul li a{
+    text-decoration: none;
+    padding: 10px;
+}
+#list_member ul li a:hover{
+    background: orangered;
+    color: black;
+}
+#list_member ul{
+    list-style: none;
+    position: absolute;
+    padding-top: 10px;
+    background:orangered;
+    color: whitesmoke;
+    left: 0;
+    width: 100%;
+}
+
 .moreInf .search{
     padding-left: 150px;
     padding-top: 20px;
@@ -190,17 +261,50 @@ header{
     width: 50%;
     background: darkgray;
     border: 1px solid;
+    padding-left: 15px;
 }
 .moreInf .money{
     float: right;
-    background: orange;
+    background: orangered;
     padding: 15px 20px;
     text-align: center;
     line-height: 25px;
+    position: relative;
+}
+.moreInf .money #Carts{
+    display: none;
+    height: 100%;
+}
+
+.Carts_product{
+    display: flex;
+    flex-flow: row;
+    position: absolute;
+    background: whitesmoke;
+    width: 200%;
+    left: -50%;
+    padding: 10px;
+}
+.Carts_product img{
+    width: 100px;
+    height: 100px;
+    background: orangered;
+}
+.moreInf .money_content{
+    display: flex;
+}
+.moreInf .money a:nth-child(1) {
+    font-size: 30px;
+    align-self: center;
+    color: rgb(255, 255, 255);
+    padding: 0 10px;
+}
+.slider{
+    display: flex;
 }
 .slider img{
     width: 100%;
-    height: 80%;
+    height: 400px;
 }
 .contener{
     padding-top: 50px;
@@ -208,10 +312,15 @@ header{
     margin: 0 auto;
     display: flex;
     flex-flow: column;
+    
 }
 .contener .ads{
     display: flex;
     flex-flow: row;
+    
+}
+.contener .ads img{
+    box-sizing: border-box;
 }
 .contener .ads :nth-child(1){
     width: 30%;
@@ -245,6 +354,9 @@ header{
     flex-flow: row;
     justify-content: space-between;
 }
+.title .icon i{
+    font-size: 40px;
+}
 .hotdeal .title p{
     flex: 80%;
     font:1rem bold;
@@ -256,8 +368,24 @@ header{
     box-sizing: border-box;
     justify-content: space-between;
 }
- .product img{
-    width: 32%;
+.product .product_content{
+    display: flex;
+    flex-flow: column;
+    width: 33%;
+    padding: 5px;
+    text-align: center;
+}
+.product .product_content i{
+    color: gray;
+}
+.product .product_content p{
+    line-height: 25px;
+}
+.product .product_content div{
+    border: 1px solid rgb(212, 212, 212);
+}
+ .product .product_content img{
+    width: 100%;
     height: 300px;
 }
 .afPro{
@@ -303,17 +431,22 @@ header{
 .sidebar_Content1{
     display: flex;
     flex-flow: row;
-    padding-bottom: 15px;
     border-bottom: rgb(223, 222, 222) 1px solid;
     box-sizing: border-box;
 }
 .sidebar_Content_inf{
     padding: 25px;
     width: 100%;
+    align-self: center;
+}
+.sidebar_Content_img{
+    width: 100%;
+    align-self: center;
 }
 .sidebar_Content1 img{
     width: 100%;
     height: 100%;
+    padding: 10px;
 }
 .sidebar_Content_inf p{
     line-height: 30px;
@@ -360,7 +493,7 @@ header{
     margin: 0 auto;
 }
 .Donors img{
-    width: 25%;
+    width: 30%;
 }
 footer{
     width: 100%;
@@ -371,13 +504,14 @@ footer{
     display: flex;
     flex-flow: row;
     justify-content: center;
+    flex-wrap: wrap;
     padding: 50px;
 }
 .bf_footer_content{
     display: flex;
     flex-flow: row;
     justify-content: center;
-    width: 25%;
+    width: 50%;
 }
 .bf_footer .bf_footer_content i{
     color: rgb(180, 180, 62);
@@ -389,7 +523,7 @@ footer{
 }
 .bf_footer_content h3{padding-bottom: 10px;}
 .footer{
-    background: rgb(90, 90, 89);
+    background: rgb(54, 54, 54);
 }
 .footer_content{
     padding: 30px 10px;
@@ -547,3 +681,69 @@ h4{
   }
   
 /* fullscreen navigation */
+/* form input */
+.formm{
+    display: none;
+    position: fixed !important;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(255, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4); 
+    padding-top: 60px;
+    z-index: 99999;
+}
+input[type=text], input[type=password]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.formm button {
+    background-color: orangered;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+  
+.formm button:hover {
+    opacity: 0.8;
+  }
+.close {
+    position: absolute;
+    right: 5px;
+    top: -5px;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    font-weight: bold;
+}
+.close:hover,.close:focus{
+    color: blue;
+    cursor: pointer;
+}
+.form-content{
+    position: relative;
+    width: 30%;
+    height: 50%;
+    margin: 50px auto;
+    background-color: #353535;
+    color: white;
+    padding: 30px;
+}
+/* animation */
+.animate{
+    animation: animatezoom 0.7s;
+}
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+/* animation */
+
+/* form input */

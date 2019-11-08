@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body,html{height: 100%;}
+.tabcontent{
+    display: none;
+    height: 100%;
+    width: 100%;
+    padding: 105px 20px;
+}
+div:nth-child(1){
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    background: gray;
+}
+.tab{
+    background: gray;
+    border: none;
+    padding: 14px 16px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    flex: 33%;
+}
+.tab:hover {
+    background-color: #777;
+  }
+  
+#Home{ background-color: red;}
+#About{ background-color: yellow;}
+#News{ background-color: blue;}

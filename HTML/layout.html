@@ -6,29 +6,41 @@
     <link href="css/css.css" type="text/css" rel="stylesheet">
     <link href="css/responsive.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="js/ja.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="js/layout.js"></script>
     <title>Document</title>
 </head>
 <body>
+                    <!-- form login -->
+    <div id="form" class="formm">
+        <form action="" class="form-content animate" >
+            <span onclick="document.getElementById('form').style.display='none'" class="close" title="close input form">&times;</span>
+            <p><strong> User Name:</p></strong>
+            <input type="text" placeholder="Enter User name">
+            <p><strong> Password</strong></p>
+            <input type="password" placeholder="Enter Password">
+            <button type="submit">Login</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+        </form>
+    </div>
+                        <!-- form login -->
     <header>
         <div class="header1">
-            <div class="new">
-                <p>new</p>
-            </div>
-            <div class="icon">
-                <p></p>
+            <div class="news">
+                <p>News</p>
             </div>
             <div class="login">
-                <a href="#" class="login1" >Login </a>
+                <a href="javascript:void(0)" class="login1 button_form" onclick="document.getElementById('form').style.display='block'">Login </a>
                 <a href="#" class="login1">My Account</a>
                 <a href="#" class="login1">Checkout</a>
-                <a href="#" class="login1">English</a>
-                <button id="myBtn">out</button>
+                <a href="#" class="login1">Language</a>
             </div>
         </div>
         <div class="header2">
             <div class="logo">
-                <img src="images.jpeg" alt="">
+                <img src="img/logo-rong_(7).jpg" alt="">
             </div>
             <div class="menu">
                     <ul" class="ul">
@@ -62,19 +74,20 @@
         <div class="moreInf">
             <div class="infContent">
                 <div class="categori" id="categori">
-                    <i class="fa fa-bars" class="i"></i>
-                    <a href="#"  class="memeber" style="align-self: center;">Member</a> 
+                    <div class="member">
+                        <a href="javascript:void(0)" onclick="Member()" ><i class="fa fa-bars" class="i" ></i></a>
+                        <a href="#"  class="memeber" style="align-self: center;">CATEGORIES</a>
+                    </div>  
+                    <div id="list_member">
+                        <ul >
+                            <li><a href="#">Laptop & MacBook</a></li>
+                            <li><a href="#">Tivi & Màn hình</a></li>
+                            <li><a href="#">PC & phụ kiện PC</a></li>
+                            <li><a href="#">Linh kiện laptop</a></li>
+                        </ul>
+                    </div>
                 </div>
-        <!-- responsive menu -->
-                 <!-- <div class="responsive_menu" id="responsive_menu">
-                    <a href="#">Home</a>
-                    <a href="#">Features</a>
-                    <a href="#" >About</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Contact</a>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
-                </div> -->
-        <!-- responsive menu -->
+                <!--  menu responsive -->
                 <div id="myNav" class="overlay">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                     <div class="overlay-content">
@@ -86,110 +99,224 @@
                     </div>
                 </div>
                 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+                <!--  menu responsive -->
                 <div class="search">
                     <form action="">
                         <input type="search" placeholder="Search for....">
                         <button type="submit"><i class="fa fa-search"></i></button>
                     </form>
                 </div>
-                <div class="money"><a href="#">Item - $ 5000</a></div>
+                <div class="money">
+                    <div class="money_content">
+                        <a href="#" onclick="openCarts()"><i class="fa fa-shopping-cart"></i></a>
+                        <a href="#">Item $5000</a>
+                    </div>
+                    <div id="Carts">
+                        <div class="Carts_product">
+                            <div>
+                                <img src="img/msi-gp63_8re.jpg" alt="">
+                            </div>
+                            <div>
+                                <p style="font-size: 15px;"> Laptop Acer Swift 3 SF315-52-52Z7 (NX.GZBSV.004)</p> 
+                                <span style="font-size: 10px;">Amount : x1</span><span style="float: right;">$1000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
              </div>
         </div>
         <div class="slider">
-            <img src="img/sabo-and-monkey_d_luffy-fire-one_piece_pirate_warriors_3-2880x1620.jpg" alt="">
+            <img src="img/Untitled-2.jpg" alt="" class="myslide">
+            <img src="img/ads.jpg" alt="" class="myslide">
+            <img src="img/lastpost.jpg" alt="" class="myslide">
         </div>
     </div>
     <div class="contener">
         <div class="ads">
-            <img src="img/1035281_anime-wallpaper-one-piece-luffy-wallpapers-phone-hd-backgrounds_8513x4925_h.jpg" alt="">
-            <img src="img/ava-565eb.jpg" alt="">
-            <img src="img/1035281_anime-wallpaper-one-piece-luffy-wallpapers-phone-hd-backgrounds_8513x4925_h.jpg" alt="">
+            <img src="img/ads1.jpg" alt="">
+            <img src="img/ads.jpg" alt="" style="padding: 0 5px;">
+            <img src="img/ads2.jpg" alt="">
         </div>
         <div class="mainContent">
             <div class="content">
                <div class="hotdeal">
                    <div class="title">
-                       <p>HOT DEALS</p>
-                       <a href="#">icon</a>
+                       <p style="line-height: 40px;">HOT DEALS</p>
+                       <div class="icon">
+                           <a href="#"><i class="fa fa-angle-left"></i></a>
+                           <a href="#"><i class="fa fa-angle-right"></i></a>
+                        </div>
                    </div>
                    <div class="product">
-                       <img src="img/c2b7cfc84a9c1b5c6dd13e8b4c8f5d5b.jpg" alt="">
-                       <img src="img/c2b7cfc84a9c1b5c6dd13e8b4c8f5d5b.jpg" alt="">
-                       <img src="img/c2b7cfc84a9c1b5c6dd13e8b4c8f5d5b.jpg" alt="">
+                       <div class="product_content">
+                            <div><img src="img/msi-gp63_8re.jpg" alt=""></div>
+                            <div>
+                                <p><strong>MSI GP63 - 8RE</strong></p>
+                                <p><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></p>
+                                <p>$2000</p>
+                            </div>
+                       </div>
+                       <div class="product_content">
+                            <div><img src="img/ASUS-ROG-GL553VD-01.jpg" alt=""></div>
+                            <div>
+                                <p><strong>ASUS ROG GL553</strong></p>
+                                <p><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star" ></i></p>
+                                <p>$2500</p>
+                            </div>
+                       </div>
+                       <div class="product_content">
+                            <div><img src="img/ASUS-ROG-Zephyrus-gx531.jpg" alt=""></div>
+                            <div>
+                                <p><strong>ASUS ROG ZEPHYRUS</strong></p>
+                                <p><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></p>
+                                <p>$1500</p>
+                            </div>
+                       </div>  
                    </div>
-                   <img class="afPro" src="img/Brook_Watching_over_Laboon.png" alt="">
+                   <img class="afPro" src="img/afcontent.jpg" alt="">
                </div>
                <div class="collections">
                     <div class="title">
-                        <p>COLLECTIONS</p>
-                        <div class="option">
+                        <p style="line-height: 40px;">COLLECTIONS</p>
+                        <div class="option" style="line-height: 40px;">
                             <i class="material-icons"></i></i><a href="#">Lastest</a>
                             <i class="material-icons"></i></i><a href="#">Discount</a>
                             <i class="material-icons"></i></i><a href="#">Bestsell</a>
                         </div>
-                        <div>
-                            <a href="#">icon</a>
+                        <div class="icon">
+                            <a href="#"><i class="fa fa-angle-left"></i></a>
+                            <a href="#"><i class="fa fa-angle-right"></i></a>
                         </div>
                     </div>
                     <div class="product">
-                        <img src="img/c2b7cfc84a9c1b5c6dd13e8b4c8f5d5b.jpg" alt="">
-                        <img src="img/c2b7cfc84a9c1b5c6dd13e8b4c8f5d5b.jpg" alt="">
-                        <img src="img/c2b7cfc84a9c1b5c6dd13e8b4c8f5d5b.jpg" alt="">
+                        <div class="product_content">
+                            <div><img src="img/msi-gp63_8re.jpg" alt=""></div>
+                            <div>
+                                <p><strong>MSI GP63 - 8RE</strong></p>
+                                <p><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></p>
+                                <p>$2000</p>
+                            </div>
+                       </div>
+                       <div class="product_content">
+                            <div><img src="img/ASUS-ROG-GL553VD-01.jpg" alt=""></div>
+                            <div>
+                                <p><strong>ASUS ROG GL553</strong></p>
+                                <p><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star" ></i></p>
+                                <p>$2500</p>
+                            </div>
+                       </div>
+                       <div class="product_content">
+                            <div><img src="img/ASUS-ROG-Zephyrus-gx531.jpg" alt=""></div>
+                            <div>
+                                <p><strong>ASUS ROG ZEPHYRUS</strong></p>
+                                <p><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></p>
+                                <p>$1500</p>
+                            </div>
+                       </div>
                     </div>
-                    <img class="afPro" src="img/Brook_Watching_over_Laboon.png" alt="">
+                    <img class="afPro" src="img/afcontent1.jpg" alt="">
                </div>
                <div class="digitals">
                     <div class="title">
-                        <p>DIGITALS</p>
-                        <div class="option">
-                            <a href="#">Sports & Outdoor</a>
+                        <p style="line-height: 40px;">DIGITALS</p>
+                        <div class="option" style="line-height: 40px;">
+                            <a href="#">Sports </a>
                             <a href="#">Healthy</a>
                             <a href="#">Automatic</a>
                         </div>
-                        <div>
-                            <a href="#">icon</a>
+                        <div class="icon">
+                            <a href="#"><i class="fa fa-angle-left"></i></a>
+                            <a href="#"><i class="fa fa-angle-right"></i></a>
                         </div>
                     </div>
                     <div class="product">
-                        <img src="img/c2b7cfc84a9c1b5c6dd13e8b4c8f5d5b.jpg" alt="">
-                        <img src="img/c2b7cfc84a9c1b5c6dd13e8b4c8f5d5b.jpg" alt="">
-                        <img src="img/c2b7cfc84a9c1b5c6dd13e8b4c8f5d5b.jpg" alt="">
+                        <div class="product_content">
+                            <div><img src="img/msi-gp63_8re.jpg" alt=""></div>
+                            <div>
+                                <p><strong>MSI GP63 - 8RE</strong></p>
+                                <p><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></p>
+                                <p>$2000</p>
+                            </div>
+                       </div>
+                       <div class="product_content">
+                            <div><img src="img/ASUS-ROG-GL553VD-01.jpg" alt=""></div>
+                            <div>
+                                <p><strong>ASUS ROG GL553</strong></p>
+                                <p><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star" ></i></p>
+                                <p>$2500</p>
+                            </div>
+                       </div>
+                       <div class="product_content">
+                            <div><img src="img/ASUS-ROG-Zephyrus-gx531.jpg" alt=""></div>
+                            <div>
+                                <p><strong>ASUS ROG ZEPHYRUS</strong></p>
+                                <p><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></p>
+                                <p>$1500</p>
+                            </div>
+                       </div>
                     </div>
-                    <img class="afPro" src="img/Brook_Watching_over_Laboon.png" alt="">
+                    <img class="afPro" src="img/afcontent2.jpg" alt="">
                </div>
                <div class="home">
                     <div class="title">
-                        <p>HOME & GARDENS</p>
-                        <div class="option">
-                            <a href="#">Sports & Outdoor</a>
+                        <p style="line-height: 40px;">HOME & GARDENS</p>
+                        <div class="option" style="line-height: 40px;">
+                            <a href="#">Sports </a>
                             <a href="#">Healthy</a>
                             <a href="#">Automatic</a>
                         </div>
-                        <div>
-                            <a href="#">icon</a>
+                        <div class="icon">
+                            <a href="#"><i class="fa fa-angle-left"></i></a>
+                            <a href="#"><i class="fa fa-angle-right"></i></a>
                         </div>
                     </div>
                     <div class="product">
-                        <img src="img/c2b7cfc84a9c1b5c6dd13e8b4c8f5d5b.jpg" alt="">
-                        <img src="img/c2b7cfc84a9c1b5c6dd13e8b4c8f5d5b.jpg" alt="">
-                        <img src="img/c2b7cfc84a9c1b5c6dd13e8b4c8f5d5b.jpg" alt="">
+                        <div class="product_content">
+                            <div><img src="img/msi-gp63_8re.jpg" alt=""></div>
+                            <div>
+                                <p><strong>MSI GP63 - 8RE</strong></p>
+                                <p><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></p>
+                                <p>$2000</p>
+                            </div>
+                       </div>
+                       <div class="product_content">
+                            <div><img src="img/ASUS-ROG-GL553VD-01.jpg" alt=""></div>
+                            <div>
+                                <p><strong>ASUS ROG GL553</strong></p>
+                                <p><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star" ></i></p>
+                                <p>$2500</p>
+                            </div>
+                       </div>
+                       <div class="product_content">
+                            <div><img src="img/ASUS-ROG-Zephyrus-gx531.jpg" alt=""></div>
+                            <div>
+                                <p><strong>ASUS ROG ZEPHYRUS</strong></p>
+                                <p><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></p>
+                                <p>$1500</p>
+                            </div>
+                       </div>
                     </div>
-                    <img class="afPro" src="img/Brook_Watching_over_Laboon.png" alt="">
+                    <img class="afPro" src="img/afcontent3.jpg" alt="">
                     <div  class="clear"></div>
                 </div>
                <div class="testimonial">
                     <div class="title">
-                        <p>TESTIMONIAL</p>
-                        <a href="#">icon</a>
+                        <p style="line-height: 40px;">TESTIMONIAL</p>
+                        <div class="icon">
+                            <a href="#"><i class="fa fa-angle-left"></i></a>
+                            <a href="#"><i class="fa fa-angle-right"></i></a>
+                        </div>
                     </div>
                     <div class="Information">
                         <div class="profile">
-                            <img src="img/2022713_Japanese_ShowThumbnail_642cf6b3-ee9d-e911-82a8-dd291e252010.jpg" alt="">
+                            <img src="img/Bill_Gates_2004_cr.jpg" alt="">
                             <p>Monkey D.Luffy</p>
                             <p>--Prirate King--</p>
                         </div>
                         <div class="caps">
-                            <p>i think</p>
+                            <p>When you have money in your hand, only you forget who you are.
+                                But ... When you don't have any money, the whole world will forget who you are.
+                                That is life!<br> Bill Gates</p>
                         </div>
                     </div>
                </div>
@@ -201,38 +328,38 @@
                     </div>
                     <div class="sidebar_Content">
                         <div class="sidebar_Content1">
-                            <div class="sidebar_Content_img"><img src="img/images.jpeg" alt=""></div>
+                            <div class="sidebar_Content_img"><img src="img/sidebar_corei9.jpg" alt=""></div>
                             <div class="sidebar_Content_inf">
-                                <p>DONEC PEDE</p>
+                                <p>Intel core I9</p>
                                 <p style="color:orange;"> $20000</p>
                             </div>
                         </div>
                         <div class="sidebar_Content1">
-                            <div class="sidebar_Content_img"><img src="img/images.jpeg" alt=""></div>
+                            <div class="sidebar_Content_img"><img src="img/sidebar-aaa.jpg" alt=""></div>
                             <div class="sidebar_Content_inf">
-                                <p>CURAPITURA PELE</p>
+                                <p>ASUS ROG</p>
                                 <p style="color:orange;"> $2355000</p>
                             </div>
                         </div>
                         <div class="sidebar_Content1">
-                            <div class="sidebar_Content_img"><img src="img/images.jpeg" alt="" ></div>
+                            <div class="sidebar_Content_img"><img src="img/sidebar_card.jpg" alt="" ></div>
                             <div class="sidebar_Content_inf">
-                                <p>UT A NISL</p>
+                                <p>GTX 1990</p>
                                 <p style="color:orange;"> $20000</p>
                             </div>    
                         </div>
                         <div class="sidebar_Content1">
-                            <div class="sidebar_Content_img"><img src="img/images.jpeg" alt="" ></div>
+                            <div class="sidebar_Content_img"><img src="img/sidebar_main.png" alt="" ></div>
                             <div class="sidebar_Content_inf">
-                                <p>PHASELLUS A EST</p>
+                                <p>Mainboard Asrock Z370 Gaming K6</p>
                                 <p style="color:orange;"> $20000</p>
                             </div>    
                         </div>
                         <div class="sidebar_Content1">
-                            <div class="sidebar_Content_img"><img src="img/images.jpeg" alt="" ></div>
+                            <div class="sidebar_Content_img"><img src="img/sidebar_card.jpg" alt="" ></div>
                             <div class="sidebar_Content_inf">
-                                <p>DONEC PEDE</p>
-                                <p style="color:orange;"> $20000</p>
+                                <p>GTX 1980</p>
+                                <p style="color:orange;"> $20400</p>
                             </div>    
                         </div>
                     </div>
@@ -244,7 +371,7 @@
                     <div class="sidebar_Content">
                         <div class="lastpost1">
                             <div class="lastpost1_content">
-                                <img src="img/1456679987_ASL.jpg" alt="">
+                                <img src="img/lastpost.jpg" alt="">
                                 <h3>Phasellus Leo Dotor</h3>
                                 <p style="padding: 10px 0;">Secretary is a person whose job is helps and supports sb, usually in their job</p>
                                 <p>READ MORE</p>
@@ -252,7 +379,7 @@
                         </div>
                         <div class="lastpost1">
                             <div class="lastpost1_content">
-                                <img src="img/1456679987_ASL.jpg" alt="">
+                                <img src="img/lastpost1.jpg" alt="">
                                 <h3>Phasellus Leo Dotor</h3>
                                 <p style="padding: 10px 0;">Secretary is a person whose job is helps and supports sb, usually in their job</p>
                                 <p>READ MORE</p>
@@ -295,10 +422,9 @@
             </div>
         </div>
         <div class="Donors">
-            <img src="img/download.jfif" alt="">
-            <img src="img/images.jpeg" alt="">
-            <img src="img/download.jfif" alt="">
-            <img src="img/images.jpeg" alt="">
+            <img src="img/msi-dragon_spirit_logo.png" alt="">
+            <img src="img/VR_new.png" alt="">
+            <img src="img/CorelDraw_Graphics_Suite_X8_logo.png" alt="">
         </div>
     </div>
     <footer>
@@ -343,7 +469,7 @@
         <div class="footer">
             <div class="footer_content">
                 <div class="footer_content_quartz">
-                    <img src="img/images.jpeg" alt="" class="logo">
+                        <img src="img/logo-rong_(7).jpg" alt="" class="logo">
                     <p>Quartz is Free shipping anywhere worldwildeFree shippingldwilde</p>
                 </div>
                 <div class="footer_content_customerService">

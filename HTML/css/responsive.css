@@ -19,11 +19,8 @@
     .header2 .contact{
         display: none;
     }
-    .moreInf .money{
+    .moreInf .search{
         display: none;
-    }
-    .search{
-        flex: 60%;
     }
     .footer_content{
         display: flex;
@@ -42,8 +39,25 @@
         width: 100%;
     }
  }
- @media only screen and (max-width: 600px){
-     .header1 .new{
+ @media only screen and (max-width: 800px){
+    .header1{
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+    }
+    .login{
+        justify-content: center;
+        padding-top: 20px;
+    }
+    .logo {
+        display: none;
+    }
+    .header2{
+        justify-content: center;
+    }
+ }
+ @media only screen and (max-width: 610px){
+     .header1 .new:after,.header1 .new::before {
          display: none;
      }
      .header1{
@@ -55,7 +69,7 @@
      .header2{
          display: none;
      }
-     .moreInf .search{
+     .moreInf .money{
          display: none;
      }
      .contener .ads{
@@ -64,11 +78,15 @@
     }
     .contener .ads img{
         width: 100% !important;
-        padding-top: 10px;
+        padding: 10px 0px !important;
     }
     .product{
         display: flex;
         flex-flow: column;
+    }
+    .product_content{
+        width: 100% !important;
+        padding-bottom: 10px;
     }
     .product img{
         width: 100%;
@@ -77,14 +95,13 @@
     .Donors{
         display: none;
     }
-    .bf_footer{
+    /* .bf_footer{
         display: none;
-    }
-
+    } */
     .categori{
         display: none !important;
     }
-      .responsive_menu{
+    .responsive_menu{
         display: block;
         width: 100%;
     }
@@ -112,7 +129,7 @@
         align-self: center;
     }
  }
- @media only screen and (max-width: 600px){
+ @media only screen and (max-width: 610px){
     .responsive_menu.responsive{
          position: relative;
      }
@@ -125,9 +142,6 @@
         float: none;
         display: block;
         text-align: left;
-    }
-    .footer_content{
-        display: none !important;
     }
     .responsive_footer{
         display:block;

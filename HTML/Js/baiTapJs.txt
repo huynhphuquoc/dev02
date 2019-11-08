@@ -1,0 +1,14 @@
+﻿bài tập javascript 
+
+- tạo một form html gồm các input 
++ họ tên -- chỉ được nhập chữ ko dc nhập số
++ tuổi -- chỉ được nhập số
++ số điện thoại -- đúng định dạng 10 số 
++ email -- đúng định dạng @gmail.com
+===> viết code js để kiểm tra các yêu cầu trên 
+nếu không hợp lệ thì hiển thị nội dung màu đỏ ngay bên trên ô input 
+với nội dung dữ liệu nhập vào không hợp lệ 
+
+==> nếu thông tin hợp lệ thì hiển thị thông tin dưới dạng bảng  ngày bên dưới form 
+
+họ tên || tuổi || số điện thoại || email
