@@ -30,12 +30,25 @@ function myFunction() {
 // js fullscreeen navigation
 function Member(){
   var x=document.getElementById("list_member");
-  x.style.display="block";
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  }
+  else {
+    x.style.display = "none";
+  }
 }
 function openCarts(){
-  document.getElementById("Carts").style.display="block";
-  document.getElementsByClassName("money")[0].style.background="black";
+  var x =document.getElementById("Carts");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    document.getElementsByClassName("money")[0].style.background="black";
+  }
+  else {
+    x.style.display = "none";
+    document.getElementsByClassName("money")[0].style.background="orangered";
+  }
 }
+  
 // var index=1;
 // show(index);
 // function pluss(n){
