@@ -512,11 +512,6 @@ margin: 5px 0px;
 }
 .footer1 > div:last-child{
 border-right: none ;
-}
-.footer1 > div > div {
-height: 100%;
-padding: 20px;
-
 } 
 .footer1 div > div.footer1_sub1{
 flex-grow: 1;
@@ -524,15 +519,16 @@ line-height: 120px;
 color: tomato;
 text-align: center;
 font-size: 50px;
-
+padding: 16px 0px 16px 16px;
 }
 .footer1 div > div.footer1_sub2{
 flex-grow:1;
 font-size: 13px;
 color: rgb(8, 6, 5);
+padding: 16px;
 }
 .footer1 div > div.footer1_sub2 p{
-margin-top:20px ;
+margin-top:8px ;
 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .footer2{
