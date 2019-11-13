@@ -2,7 +2,10 @@
 *{
 	margin: 0;
 	padding: 0;
-    font-family: Verdana;
+    font-family: Verdana;   
+}
+body{
+    background: rgb(255, 255, 255);
 }
 img{
     object-fit: cover;
@@ -215,11 +218,27 @@ header{
     align-self: center;
     padding: 0 10px;
 }
+    /* event menu not use js */
+#menustate:checked ~ #list_member{
+    display: block;
+}
+.menustate{
+    display: none;
+}
+    /* event menu not use js */
 .member{
     display: flex;
 }
 #list_member{
     display: none;
+    transition: top 0.8s ease-in;
+    z-index: 999;
+}
+#list_member ul{
+    transition: ease-in 0.8s left;
+}
+.member:active .list_member{
+    display: block;
 }
 #list_member ul li a{
     text-decoration: none;
@@ -284,6 +303,7 @@ header{
     width: 200%;
     left: -50%;
     padding: 10px;
+    z-index: 999;
 }
 .Carts_product img{
     width: 100px;
@@ -299,12 +319,41 @@ header{
     color: rgb(255, 255, 255);
     padding: 0 10px;
 }
-.slider{
+    /* slidernot js */
+    .slider div{
+        display: none;
+        position: relative;
+    }
+
+    .slider input:checked + div{
+        display: block;
+    }
+    .slider input{
+        display: none;
+    }
+    .slider div label{
+        cursor: pointer;
+        position: absolute;
+        font-size: 40px;
+        color: gray;
+        
+    }
+    .slider div .next{
+        top: 40%;
+        right: 20px;transition:all 1.0s ease-in-out;
+    }
+    .slider div .pre{
+        top: 40%;
+        left:20px;
+    }
+    /* slidernot js */
+/* .slider{
     display: flex;
-}
+} */
 .slider img{
     width: 100%;
-    height: 400px;
+    height: 100%;
+    
 }
 .contener{
     padding-top: 50px;

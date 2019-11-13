@@ -74,10 +74,14 @@
         <div class="moreInf">
             <div class="infContent">
                 <div class="categori" id="categori">
-                    <div class="member">
-                        <a href="javascript:void(0)" onclick="Member()" ><i class="fa fa-bars" class="i" ></i></a>
-                        <a href="#"  class="memeber" style="align-self: center;">CATEGORIES</a>
-                    </div>  
+                    <label for="menustate">
+                        <div class="member">
+                            <a><i class="fa fa-bars" class="i" style="cursor: pointer;"></i></a> 
+                            <a href="#"  class="memeber" style="align-self: center;">CATEGORIES</a>
+                            
+                        </div> 
+                    </label>
+                    <input type="checkbox" id="menustate" name="menustate" class="menustate">
                     <div id="list_member">
                         <ul >
                             <li><a href="#">Laptop & MacBook</a></li>
@@ -107,10 +111,13 @@
                     </form>
                 </div>
                 <div class="money">
-                    <div class="money_content">
-                        <a href="#" onclick="openCarts()"><i class="fa fa-shopping-cart"></i></a>
-                        <a href="#">Item $5000</a>
-                    </div>
+                    <!-- <label for="cartsState"> -->
+                        <div class="money_content">
+                            <a href="#" onclick="openCarts()"><i class="fa fa-shopping-cart"></i></a>
+                            <a href="#">Item $5000</a>
+                        </div>
+                    <!-- </label> -->
+                    <!-- <input type="checkbox" id="cartsState" name="cartsState" class="cartsState" style="display: none;"> -->
                     <div id="Carts">
                         <div class="Carts_product">
                             <div>
@@ -126,9 +133,26 @@
              </div>
         </div>
         <div class="slider">
-            <img src="img/Untitled-2.jpg" alt="" class="myslide">
-            <!-- <img src="img/ads.jpg" alt="" class="myslide">
-            <img src="img/lastpost.jpg" alt="" class="myslide"> -->
+            <input type="radio" name="sliderimg" checked="checked" id="img1">
+            <div>
+                <label for="img3" class="pre"><i class="fa fa-arrow-circle-left"></i></label>
+                <img src="img/Untitled-2.jpg" alt="" class="myslide" >
+                <label for="img2" class="next"><i class="fa fa-arrow-circle-right"></i></label>
+            </div>
+
+            <input type="radio" name="sliderimg" id="img2" >
+            <div>
+                <label for="img1" class="pre"><i class="fa fa-arrow-circle-left"></i></label>
+                <img src="img/ads.jpg" alt="" class="myslide">
+                <label for="img3" class="next"><i class="fa fa-arrow-circle-right"></i></label>
+            </div>
+
+            <input type="radio" name="sliderimg" id="img3">
+            <div>
+                <label for="img2" class="pre"><i class="fa fa-arrow-circle-left"></i></label>
+                <img src="img/lastpost.jpg" alt="" class="myslide">
+                <label for="img1" class="next"><i class="fa fa-arrow-circle-right"></i></label>
+            </div>
         </div>
     </div>
     <div class="contener">

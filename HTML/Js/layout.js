@@ -28,15 +28,15 @@ function myFunction() {
     document.getElementById("myNav").style.width = "0%";
   }
 // js fullscreeen navigation
-function Member(){
-  var x=document.getElementById("list_member");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  }
-  else {
-    x.style.display = "none";
-  }
-}
+// function Member(){
+//   var x=document.getElementById("list_member");
+//   if (x.style.display === "none") {
+//     x.style.display = "block";
+//   }
+//   else {
+//     x.style.display = "none";
+//   }
+// }
 function openCarts(){
   var x =document.getElementById("Carts");
   if (x.style.display === "none") {
