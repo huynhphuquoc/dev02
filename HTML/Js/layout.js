@@ -64,3 +64,41 @@ function openCarts(){
 //   }
 //   x[index-1].style.display="block";
 // }
+
+
+// Sign Up Form
+function SignUp(){
+  var x=document.forms["sign_up"];
+  if(x[1].value===x[2].value){
+    check_re_pass.innerHTML="";
+    alert("suscess");
+    return ;
+  }
+  else{
+    check_re_pass.style.display="block";
+    check_re_pass.innerHTML="Password does not match !";
+    // return false;
+  }  
+  var data = {
+      usern: x[0].value,
+      passw: x[1].value
+  };
+  localStorage.setItem("data",JSON.stringify(data));
+  
+}
+
+// Sign Up Form
+
+function test(){
+  var x=document.forms["login"];
+  var user = x[0].value;
+  var pass = x[1].value;
+  var account = JSON.parse(localStorage.getItem("data"));
+  if (user == account.usern && pass == account.passw ) {
+      alert("đúng");
+      return ;
+  } else {
+      alert("sai");
+      return false;
+  }
+}

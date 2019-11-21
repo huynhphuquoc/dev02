@@ -11,9 +11,38 @@
     <title>Document</title>
 </head>
 <body>
+                    <!-- form sign up -->
+    <div id="sign_up" class="sign_up"  >
+        <form action="" class="signup_content animate" id="sign_up"  onsubmit="return SignUp();">
+            <span class="close" title="close input form" onclick="document.getElementById('sign_up').style.display='none'">&times;</span>
+            <h3 style="text-align: center; padding: 10px 0;">Sign Up</h3>  
+            <div class="UserName">
+                <strong><p for="">UserName</p></strong>
+                <input type="text" placeholder="Name, Email or phone number" name="UserName" required>
+            </div>
+            <div class="Password">
+                <strong><p>Password</p></strong>
+                <input type="password" placeholder="Password" id="Password" required>
+            </div>
+            
+            <div class="confirm_password">
+                <strong><p>Confirm Password</p></strong>
+                <p id="check_re_pass" style="color: orangered; font: 13px; display: none;" ></p>
+                <input type="password" placeholder="Enter password again" id="Confirm_password" required>
+            </div>      
+            <p style="padding-bottom: 20px;"><input type="checkbox" checked="checked" style="font-size: 20px;" >Remember me</p>
+            <div class="clearfix">
+                <button type="button" class="cancel" onclick="document.getElementById('sign_up').style.display='none'">Cancel</button>
+                <button type="submit" class="sign">Sign Up</button>
+            </div>
+            
+        </form>
+    </div>
+                    <!-- form sign up -->
                     <!-- form login -->
     <div id="form" class="formm">
-        <form action="" class="form-content animate" >
+        <form action="" class="form-content animate"  id="login" onsubmit="return test();">
+            <h3 style="text-align: center; color: black;">Login</h3>
             <span onclick="document.getElementById('form').style.display='none'" class="close" title="close input form">&times;</span>
             <p><strong> User Name:</p></strong>
             <input type="text" placeholder="Enter User name">
@@ -33,6 +62,7 @@
             </div>
             <div class="login">
                 <a href="javascript:void(0)" class="login1 button_form" onclick="document.getElementById('form').style.display='block'">Login </a>
+                <a href="javascript:void(0)" class="login1" onclick="document.getElementById('sign_up').style.display='block'">Sign Up</a>
                 <a href="#" class="login1">My Account</a>
                 <a href="#" class="login1">Checkout</a>
                 <a href="#" class="login1">Language</a>
@@ -440,7 +470,7 @@
                         
                     </div>
                     <div class="faqs1" style="border: none; padding-top: 30px;">
-                        <img src="img/c2b7cfc84a9c1b5c6dd13e8b4c8f5d5b.jpg" alt="" width="100%">
+                        <img src="img/adsgaming.fdmdownload" alt="" width="100%">
                     </div>
                 </div>
             </div>
